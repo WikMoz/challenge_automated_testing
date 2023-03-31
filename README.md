@@ -25,4 +25,4 @@ Naprawienie problemu, który wyświetla się na konsoli (nie dotyczy każdego)
 ## Podzadanie 3
 Dodanie kodu do własnego zdalnego repozytorium
 ## Podzadanie 4
-![2023-03-31_16h30_38.png](..%2F..%2FPictures%2FScreenpresso%2F2023-03-31_16h30_38.png)
+![2023-03-31_16h30_38](https://user-images.githubusercontent.com/122229411/229150021-6541ef57-bbb3-474c-bf86-b2e858834dbe.png)
