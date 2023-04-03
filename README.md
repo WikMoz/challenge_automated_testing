@@ -14,9 +14,9 @@ Dlaczego zdecydowałam się wziąć udział w wyzwaniu Dare IT Challenge?
 
 Cześć! Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym się rozwijać w tym kierunku, nauczyć się jak 
 najwięcej i sprawdzić czy dam radę zmierzyć się z testami automatycznymi.
-Brałam udział w Waszym poprzednim challenge'u na testera manualnego, który był super a
-testowanie z Wami sprawiło mi niesamowicie dużo frajdy i dało bardzo dużo fajnej energii, wiary w siebie i motywacji. 
-Nadal idę w nieznane, ale teraz wygląda to już tak
+Brałam udział w Waszym poprzednim challenge'u na testera manualnego i
+testowanie z Wami sprawiło mi niesamowicie dużo frajdy i dało bardzo dużo pozytwnej energii i motywacji. 
+Kontynuuję podróż w nieznane, ale teraz już w ten sposób:
 
 
 ![img_3.png](img_3.png)
