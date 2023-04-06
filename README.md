@@ -8,15 +8,15 @@
 * [Podzadanie 3](#podzadanie-3)
 * [Podzadanie 4](#podzadanie-4)
 # Zadanie 1 
-Konfiguracja oprogramowania
+Konfiguracja oprogramowania 
 ## Podzadanie 1
 Dlaczego zdecydowałam się wziąć udział w wyzwaniu Dare IT Challenge?
 
-Cześć! Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym się rozwijać w tym kierunku, nauczyć się jak 
-najwięcej i sprawdzić czy dam radę zmierzyć się z testami automatycznymi.
+Cześć! Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym się rozwijać w tym kierunku ⬆️, nauczyć się jak 
+najwięcej 🦉📚 i sprawdzić czy dam radę zmierzyć się z testami automatycznymi 🤖🤺.
 Brałam udział w Waszym poprzednim challenge'u na testera manualnego i
-testowanie z Wami sprawiło mi niesamowicie dużo frajdy i dało bardzo dużo pozytwnej energii i motywacji. 
-Kontynuuję podróż w nieznane, ale teraz już w ten sposób:
+testowanie z Wami sprawiło mi niesamowicie dużo frajdy 🤸 i dało bardzo dużo pozytwnej energii 🔋 i motywacji. 
+Kontynuuję podróż w nieznane 🗽, ale teraz już w ten sposób:
 
 
 ![img_3.png](img_3.png)
