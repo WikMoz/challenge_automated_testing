@@ -12,6 +12,8 @@
   * [Podzadanie 2](#podzadanie-2-1)
   * [Podzadanie 3](#podzadanie-3-1)
   * [Podzadanie 4](#podzadanie-4-1)
+  * [Podzadanie 5](#podzadanie-5)
+  * [Podzadanie 6](#podzadanie-6)
   
 # Zadanie 1 
 **KONFIGURACJA OPROGRAMOWANIA**
