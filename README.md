@@ -54,73 +54,93 @@ Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym
 
 <details>
   <summary>remind_password_hyperlink_xpath</summary>
-  <p>
+<p>
+
 - ```//a[@tabindex='-1']```
 - ```//a[starts-with(@class,'Mui')]```
 - ```//form[@class='jss1']//child::a ```
+</p>
 
 <details>
   <summary>scouts_panel_header_xpath</summary>
-  <p>
+<p>
+
 - ```//h5[text()='Scouts Panel']```
 - ```//h5[contains(@class,'h5')]```
 - ```//div/h5```
+</p>
 
 <details>
   <summary>login_input_xpath</summary>
-  <p>
+<p>
+
 - ```//input[@id='login']```
 - ```//input[@type='text' and @name='login']```
 - ```//input[starts-with(@id,'log')] ```
+</p>
 
 <details>
   <summary>password_input_xpath</summary>
-  <p>
+<p>
+
 - ```//input[@id='password']```
 - ```//form[@class='jss1']//descendant::input[@name='password']```
 - ```//input[@type='password']```
+</p>
 
 <details>
   <summary>language_select_menu_xpath</summary>
-  <p>
+<p>
+
 - ```//div[@tabindex="0"]```
 - ```//*[@id="__next"]/form/div/div[2]/div/div```
 - ```//input[@value='en']//preceding-sibling::div```
+</p>
 
 <details>
   <summary>language_listbox_xpath</summary>
-  <p>
+<p>
+
 - ```//ul```
 - ```//ul[@role='listbox']```
 - ```//*[@id="menu-"]/div[3]/ul```
+</p>
 
 <details>
   <summary>polish_language_option_xpath</summary>
-  <p>
+<p>
+
 - ``` //li[@data-value='pl']```
 - ``` //ul/li[1] ```
 - ``` //*[@id="menu-"]/div[3]/ul/li[1]```
+</p>
 
 <details>
   <summary>english_language_option_xpath</summary>
-  <p>
--```//ul/li[2]```
--```//li[contains(@data-value,'en')]```
+<p>
+
+- ```//ul/li[2]```
+- ```//li[contains(@data-value,'en')]```
 - ```//li[@role='option']//following-sibling::li```
+</p>
 
 <details>
   <summary>english_language_button_xpath</summary>
-  <p>
+<p>
+
 - ```//*[text()='English'and@role='button']```
 - ```//div[starts-with(@class,'MuiSelect-root')]```
 - ```//input[@value='en']//preceding-sibling::div```
+</p>
 
 <details>
   <summary>sign_in_button_xpath</summary>
-  <p>
+<p>
+
 - ```//button[@type='submit']//child::span[1] ```
 - ```//span[text()='Sign in']```
 - ```//span[@class='MuiButton-label']```
+</p>
 
 ## Podzadanie 3
 ## Podzadanie 4
