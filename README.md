@@ -52,6 +52,9 @@ Dodanie kodu do własnego zdalnego repozytorium
 ## Podzadanie 2
 Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym elementem znalezionym na stronie, wymień 3 działające selektory.
 
+
+Elementy:
+
 <details>
   <summary>remind_password_hyperlink_xpath</summary>
 <p>
@@ -60,7 +63,7 @@ Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym
 - ```//a[starts-with(@class,'Mui')]```
 - ```//form[@class='jss1']//child::a ```
 </p>
-
+</details>
 <details>
   <summary>scouts_panel_header_xpath</summary>
 <p>
@@ -69,7 +72,7 @@ Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym
 - ```//h5[contains(@class,'h5')]```
 - ```//div/h5```
 </p>
-
+</details>
 <details>
   <summary>login_input_xpath</summary>
 <p>
@@ -78,7 +81,7 @@ Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym
 - ```//input[@type='text' and @name='login']```
 - ```//input[starts-with(@id,'log')] ```
 </p>
-
+</details>
 <details>
   <summary>password_input_xpath</summary>
 <p>
@@ -87,7 +90,7 @@ Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym
 - ```//form[@class='jss1']//descendant::input[@name='password']```
 - ```//input[@type='password']```
 </p>
-
+</details>
 <details>
   <summary>language_select_menu_xpath</summary>
 <p>
@@ -96,7 +99,7 @@ Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym
 - ```//*[@id="__next"]/form/div/div[2]/div/div```
 - ```//input[@value='en']//preceding-sibling::div```
 </p>
-
+</details>
 <details>
   <summary>language_listbox_xpath</summary>
 <p>
@@ -105,7 +108,7 @@ Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym
 - ```//ul[@role='listbox']```
 - ```//*[@id="menu-"]/div[3]/ul```
 </p>
-
+</details>
 <details>
   <summary>polish_language_option_xpath</summary>
 <p>
@@ -114,7 +117,7 @@ Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym
 - ``` //ul/li[1] ```
 - ``` //*[@id="menu-"]/div[3]/ul/li[1]```
 </p>
-
+</details>
 <details>
   <summary>english_language_option_xpath</summary>
 <p>
@@ -123,7 +126,7 @@ Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym
 - ```//li[contains(@data-value,'en')]```
 - ```//li[@role='option']//following-sibling::li```
 </p>
-
+</details>
 <details>
   <summary>english_language_button_xpath</summary>
 <p>
@@ -132,7 +135,7 @@ Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym
 - ```//div[starts-with(@class,'MuiSelect-root')]```
 - ```//input[@value='en']//preceding-sibling::div```
 </p>
-
+</details>
 <details>
   <summary>sign_in_button_xpath</summary>
 <p>
@@ -141,6 +144,7 @@ Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym
 - ```//span[text()='Sign in']```
 - ```//span[@class='MuiButton-label']```
 </p>
+</details>
 
 ## Podzadanie 3
 ## Podzadanie 4
