@@ -135,7 +135,7 @@ Elementy:
 Dodawanie selektorów do projektu
 
 ## Podzadanie 4
-Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisaywanie selektorów - Dashboard
+Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisywanie selektorów - Dashboard
 
 ## Podzadanie 5
 Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisywanie selektorów - Add a match form
