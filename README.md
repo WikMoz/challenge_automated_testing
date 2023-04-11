@@ -2,12 +2,12 @@
 ---
 ---
 ## Spis treści
-* [Zadanie 1 - Konfiguracja oprogramowania](#zadanie-1)
+* [Zadanie 1 - KONFIGURACJA OPROGRAMOWANIA](#zadanie-1)
   * [Podzadanie 1](#podzadanie-1)
   * [Podzadanie 2](#podzadanie-2)
   * [Podzadanie 3](#podzadanie-3)
   * [Podzadanie 4](#podzadanie-4)
-* [Zadanie 2 - Selektory](#zadanie-2)
+* [Zadanie 2 - SELEKTORY](#zadanie-2)
   * [Podzadanie 1](#podzadanie-1-1)
   * [Podzadanie 2](#podzadanie-2-1)
   * [Podzadanie 3](#podzadanie-3-1)
