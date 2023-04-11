@@ -64,15 +64,7 @@ Elementy:
 - ```//form[@class='jss1']//child::a ```
 </p>
 </details>
-<details>
-  <summary>scouts_panel_header_xpath</summary>
-<p>
 
-- ```//h5[text()='Scouts Panel']```
-- ```//h5[contains(@class,'h5')]```
-- ```//div/h5```
-</p>
-</details>
 <details>
   <summary>login_input_xpath</summary>
 <p>
@@ -127,15 +119,7 @@ Elementy:
 - ```//li[@role='option']//following-sibling::li```
 </p>
 </details>
-<details>
-  <summary>english_language_button_xpath</summary>
-<p>
 
-- ```//*[text()='English'and@role='button']```
-- ```//div[starts-with(@class,'MuiSelect-root')]```
-- ```//input[@value='en']//preceding-sibling::div```
-</p>
-</details>
 <details>
   <summary>sign_in_button_xpath</summary>
 <p>
@@ -147,7 +131,12 @@ Elementy:
 </details>
 
 ## Podzadanie 3
+Dodawanie selektorów do projektu
+
 ## Podzadanie 4
+Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisaywanie selektorów - Dashboard
+
 ## Podzadanie 5
+Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisywanie selektorów - Add a match form
 ## Podzadanie 6
 (dla chętnych)
