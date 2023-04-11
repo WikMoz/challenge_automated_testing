@@ -47,7 +47,8 @@ Dodanie kodu do własnego zdalnego repozytorium
 ---
 
 ## Podzadanie 1  
-(dla chętnych)
+(dla chętnych) 
+Nowy branch
 
 ## Podzadanie 2
 Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym elementem znalezionym na stronie, wymień 3 działające selektory.
@@ -138,5 +139,7 @@ Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisaywanie selektorów 
 
 ## Podzadanie 5
 Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisywanie selektorów - Add a match form
+
 ## Podzadanie 6
 (dla chętnych)
+Merdżowanie branchy
