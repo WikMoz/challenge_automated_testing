@@ -106,9 +106,9 @@ Elementy:
   <summary>polish_language_option_xpath</summary>
 <p>
 
-- ``` //li[@data-value='pl']```
-- ``` //ul/li[1] ```
-- ``` //*[@id="menu-"]/div[3]/ul/li[1]```
+- ```//li[@data-value='pl']```
+- ```//ul/li[1] ```
+- ```//*[@id="menu-"]/div[3]/ul/li[1]```
 </p>
 </details>
 <details>
@@ -132,7 +132,7 @@ Elementy:
 </details>
 
 ## Podzadanie 3
-Dodawanie selektorów do projektu
+Dodawanie selektorów do projektu - Login page
 
 ## Podzadanie 4
 Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisywanie selektorów - Dashboard
