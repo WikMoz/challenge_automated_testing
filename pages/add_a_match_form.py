@@ -13,6 +13,7 @@ class add_a_match_form(BasePage):
     league_input_xpath = "//div[8]/div/div/input"
     time_played_input_xpath = "//div[9]/div/div/input"
     number_input_xpath = "//input[contains(@name,'number')]"
+    web_match_input_xpath = "//div[11]/div/div/input"
 
 
 pass
