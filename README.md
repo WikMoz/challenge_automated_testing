@@ -7,6 +7,7 @@
   * [Podzadanie 2](#podzadanie-2)
   * [Podzadanie 3](#podzadanie-3)
   * [Podzadanie 4](#podzadanie-4)
+
 * [Zadanie 2 - SELEKTORY](#zadanie-2)
   * [Podzadanie 1](#podzadanie-1-1)
   * [Podzadanie 2](#podzadanie-2-1)
@@ -21,7 +22,7 @@
 
 ---
 ## Podzadanie 1
-Dlaczego zdecydowałam się wziąć udział w wyzwaniu Dare IT Challenge?
+_Dlaczego zdecydowałam się wziąć udział w wyzwaniu Dare IT Challenge?_
 
 Cześć! Zdecydowałam się wziąć udział w wyzwaniu, ponieważ chciałabym się rozwijać w tym kierunku ⬆️, nauczyć się jak 
 najwięcej 🦉📚 i sprawdzić czy dam radę zmierzyć się z testami automatycznymi 🤖🤺.
@@ -32,10 +33,10 @@ Kontynuuję podróż w nieznane 🗽, ale teraz już w ten sposób:
 ![img_3.png](img_3.png)
 
 ## Podzadanie 2 
-Naprawienie problemu, który wyświetla się na konsoli (nie dotyczy każdego)
+_Naprawienie problemu, który wyświetla się na konsoli (nie dotyczy każdego)._
 
 ## Podzadanie 3
-Dodanie kodu do własnego zdalnego repozytorium
+_Dodanie kodu do własnego zdalnego repozytorium._
 
 ## Podzadanie 4
 ![2023-03-31_16h30_38](https://user-images.githubusercontent.com/122229411/229150021-6541ef57-bbb3-474c-bf86-b2e858834dbe.png)
@@ -48,13 +49,13 @@ Dodanie kodu do własnego zdalnego repozytorium
 
 ## Podzadanie 1  
 (dla chętnych) 
-Nowy branch
+_Utworzenie nowego branch'a._ 🌲
 
 ## Podzadanie 2
-Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym elementem znalezionym na stronie, wymień 3 działające selektory.
+_Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdym elementem znalezionym na stronie, wymień 3 działające selektory._
 
 
-Elementy:
+**Elementy:**
 
 <details>
   <summary>remind_password_hyperlink_xpath</summary>
@@ -132,14 +133,14 @@ Elementy:
 </details>
 
 ## Podzadanie 3
-Dodawanie selektorów do projektu - Login page
+_Dodawanie selektorów do projektu - Login page._
 
 ## Podzadanie 4
-Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisywanie selektorów - Dashboard
+_Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisywanie selektorów - Dashboard._
 
 ## Podzadanie 5
-Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisywanie selektorów - Add a match form
+_Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisywanie selektorów - Add a match form._
 
 ## Podzadanie 6
 (dla chętnych)
-Merdżowanie branchy
+_Merdżowanie branchy._
