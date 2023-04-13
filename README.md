@@ -3,7 +3,7 @@
 ---
 ## Spis treści
 * [Zadanie 1 - KONFIGURACJA OPROGRAMOWANIA](#zadanie-1)
-  * [Podzadanie 1](#podzadanie-1)
+  * [Podzadanie 1](#podzadanie-1) 
   * [Podzadanie 2](#podzadanie-2)
   * [Podzadanie 3](#podzadanie-3)
   * [Podzadanie 4](#podzadanie-4)
@@ -15,7 +15,13 @@
   * [Podzadanie 4](#podzadanie-4-1)
   * [Podzadanie 5](#podzadanie-5)
   * [Podzadanie 6](#podzadanie-6)
-
+  
+* [Zadanie 3](#zadanie-3)
+  * [Podzadanie 1](#podzadanie-1-2) 
+  * [Podzadanie 2](#podzadanie-2-2)
+  * [Podzadanie 3](#podzadanie-3-2)
+  * [Podzadanie 4](#podzadanie-4-2)
+  * [Podzadanie 5](#podzadanie-5-1)
 --- 
 # Zadanie 1 
 **KONFIGURACJA OPROGRAMOWANIA**
@@ -144,3 +150,22 @@ _Dodawanie nowego pliku i klasy do Page Object Mode oraz wpisywanie selektorów 
 ## Podzadanie 6
 (dla chętnych)
 _Merdżowanie branchy._
+
+---
+# Zadanie 3
+PIERWSZY TEST I ASSERT
+---
+## Podzadanie 1
+Uzupełnienie strony logowania
+
+## Podzadanie 2
+Nowy przypadek testowy
+
+## Podzadanie 3
+Assert
+
+## Podzadanie 4
+Powtórzenie tego, co już wiemy
+
+## Pozdadanie 5
+Zadanie opcjonalne
