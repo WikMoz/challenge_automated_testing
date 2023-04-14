@@ -2,8 +2,10 @@ import os
 import unittest
 import time
 from selenium import webdriver
+from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
+
 
 
 class TestLoginPage(unittest.TestCase):
@@ -16,12 +18,14 @@ class TestLoginPage(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-
     def test_log_in_to_the_system(self):
         user_login = LoginPage(self.driver)
-        user_login.type_in_email('user04@getnada.com')
-        user_login.type_in_password('Test-1234')
-        user_login.click_on_the_sign_in_button()
+        user_login.title_of_page() #check if the title of the opened page is correct
+        user_login.type_in_email('user07@getnada.com') #enter "user07getnada@com" in the email field
+        user_login.type_in_password('Test-1234') #enter "Test-1234' in the password field
+        user_login.click_on_the_sign_in_button() #click on the sign in button
+        dashboard_page = Dashboard(self.driver)
+        dashboard_page.title_of_page() #check if the title of the opened page is correct
         time.sleep(5)
 
     @classmethod
