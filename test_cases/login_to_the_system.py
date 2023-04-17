@@ -20,12 +20,12 @@ class TestLoginPage(unittest.TestCase):
 
     def test_log_in_to_the_system(self):
         user_login = LoginPage(self.driver)
-        user_login.title_of_page() #check if the title of the opened page is correct
+        user_login.title_of_page() #check if the title of the opened page is correct (login page)
         user_login.type_in_email('user07@getnada.com') #enter "user07getnada@com" in the email field
         user_login.type_in_password('Test-1234') #enter "Test-1234' in the password field
         user_login.click_on_the_sign_in_button() #click on the sign in button
         dashboard_page = Dashboard(self.driver)
-        dashboard_page.title_of_page() #check if the title of the opened page is correct
+        dashboard_page.title_of_page() #check if the title of the opened page is correct (dashboard)
         time.sleep(5)
 
     @classmethod
