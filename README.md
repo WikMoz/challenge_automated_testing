@@ -16,7 +16,7 @@
   * [Podzadanie 5](#podzadanie-5)
   * [Podzadanie 6](#podzadanie-6)
   
-* [Zadanie 3](#zadanie-3)
+* [Zadanie 3 - PIERWSZY TEST I ASSERT](#zadanie-3)
   * [Podzadanie 1](#podzadanie-1-2) 
   * [Podzadanie 2](#podzadanie-2-2)
   * [Podzadanie 3](#podzadanie-3-2)
@@ -153,7 +153,7 @@ _Merdżowanie branchy._
 
 ---
 # Zadanie 3
-PIERWSZY TEST I ASSERT
+**PIERWSZY TEST I ASSERT**
 ---
 ## Podzadanie 1
 *Uzupełnienie strony logowania* 
@@ -173,3 +173,4 @@ PIERWSZY TEST I ASSERT
 
 ## Pozdadanie 5
 *Zadanie dla chętnych*
+Utworzenie nowej metody assert 
