@@ -13,7 +13,7 @@ class LoginPage(BasePage):
     login_url = "https://scouts-test.futbolkolektyw.pl/en/"
     expected_title = "Scouts panel - sign in"
     title_of_box_xpath = "//form/div/div[1]/h5"
-    header_of_box = 'Scouts panel'
+    expected_text = "Scouts panel"
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
@@ -26,3 +26,7 @@ class LoginPage(BasePage):
 
     def title_of_page(self):
         assert self.get_page_title(self.login_url) == self.expected_title
+
+    def title_of_box(self):
+        self.assert_element_text(self.driver, self.title_of_box_xpath, self.expected_text)
+

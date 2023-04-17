@@ -156,16 +156,20 @@ _Merdżowanie branchy._
 PIERWSZY TEST I ASSERT
 ---
 ## Podzadanie 1
-Uzupełnienie strony logowania
+*Uzupełnienie strony logowania* 
+- login_page.py
 
 ## Podzadanie 2
-Nowy przypadek testowy
+*Nowy przypadek testowy*
+- login_to_the_system.py
 
 ## Podzadanie 3
-Assert
+*Assert*
 
 ## Podzadanie 4
-Powtórzenie tego, co już wiemy
+*Powtórzenie tego, co już wiemy* 
+- pages\add_a_player_form.py
+- test_cases\add_a_player_form.py
 
 ## Pozdadanie 5
-Zadanie opcjonalne
+*Zadanie dla chętnych*
