@@ -155,6 +155,7 @@ _Merdżowanie branchy._
 # Zadanie 3
 
 **PIERWSZY TEST I ASSERT**
+
 ---
 ## Podzadanie 1
 *Uzupełnienie strony logowania* 
@@ -172,6 +173,7 @@ _Merdżowanie branchy._
 - pages\add_a_player_form.py
 - test_cases\add_a_player_form.py
 
-## Pozdadanie 5
+## Podzadanie 5
 *Zadanie dla chętnych*
+
 Utworzenie nowej metody assert 
