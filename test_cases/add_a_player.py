@@ -10,7 +10,6 @@ from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-
 class TestAddPlayerForm(unittest.TestCase):
 
    @classmethod
@@ -24,7 +23,7 @@ class TestAddPlayerForm(unittest.TestCase):
    def test_add_a_player(self):
        user_login = LoginPage(self.driver)
        user_login.type_in_email('user07@getnada.com')  # enter "user07getnada@com" in the email field
-       user_login.type_in_password('Test-1234')  # enter "Test-1234' in the password field
+       user_login.type_in_password('Test-1234')  # enter "Test-1234" in the password field
        user_login.click_on_the_sign_in_button()  # click on the sign in button
 
        time.sleep(2)
@@ -45,8 +44,20 @@ class TestAddPlayerForm(unittest.TestCase):
        add_player_form.type_in_date_of_birth('31.01.2025')
        add_player_form.click_on_the_leg_select_menu()
        add_player_form.click_on_the_right_leg_option()
-
-
+       add_player_form.type_in_club('WildGoats')
+       add_player_form.type_in_level('junior')
+       add_player_form.type_in_main_position('defender')
+       add_player_form.type_in_second_position('midfielder')
+       add_player_form.click_on_the_district_select_menu()
+       add_player_form.click_on_the_lodz_district_option()
+       add_player_form.type_in_achievements('winner of the Pipidówek Goat Cup, 3 goals in 1 second')
+       add_player_form.click_on_the_add_language_button()
+       add_player_form.type_in_language('english')
+       add_player_form.click_on_the_add_language_button()
+       add_player_form.type_in_second_language('japanese')
+       add_player_form.click_on_the_add_youtube_link_button()
+       add_player_form.type_in_youtube_link('https://www.youtube.com/watch?v=gDgFXMKA6QU')
+       add_player_form.click_on_the_submit_button()
 
        time.sleep(7)
 
