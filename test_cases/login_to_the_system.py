@@ -17,6 +17,7 @@ class TestLoginPage(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
+        super(TestLoginPage, self).setUp(self) # dzięki temu, będzie można użyć metody test_log_in_to_the_system np. w test_add_a_player aby nie kopiować całości by się zalogować
     def test_log_in_to_the_system(self):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()  # check if the title of the opened page is correct (login page)
