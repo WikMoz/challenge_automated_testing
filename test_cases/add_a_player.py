@@ -12,55 +12,55 @@ from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 class TestAddPlayerForm(unittest.TestCase):
 
-   @classmethod
-   def setUp(self):
-       os.chmod(DRIVER_PATH, 755)
-       self.driver = webdriver.Chrome(executable_path=DRIVER_PATH)
-       self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
-       self.driver.fullscreen_window()
-       self.driver.implicitly_wait(IMPLICITLY_WAIT)
+    @classmethod
+    def setUp(self):
+        os.chmod(DRIVER_PATH, 755)
+        self.driver = webdriver.Chrome(executable_path=DRIVER_PATH)
+        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
+        self.driver.fullscreen_window()
+        self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-   def test_add_a_player(self):
-       user_login = LoginPage(self.driver)
-       user_login.type_in_email('user07@getnada.com')  # enter "user07getnada@com" in the email field
-       user_login.type_in_password('Test-1234')  # enter "Test-1234" in the password field
-       user_login.click_on_the_sign_in_button()  # click on the sign in button
+    def test_add_a_player(self):
+        user_login = LoginPage(self.driver)
+        user_login.type_in_email('user07@getnada.com')  # enter "user07getnada@com" in the email field
+        user_login.type_in_password('Test-1234')  # enter "Test-1234" in the password field
+        user_login.click_on_the_sign_in_button()  # click on the sign in button
 
-       time.sleep(2)
+        time.sleep(2)
 
-       dashboard_page = Dashboard(self.driver)
-       dashboard_page.click_on_the_add_player_button()  # click on the add player button (dashboard)
+        dashboard_page = Dashboard(self.driver)
+        dashboard_page.click_on_the_add_player_button()  # click on the add player button (dashboard)
 
-       time.sleep(2)
+        time.sleep(2)
 
-       add_player_form = AddPlayerForm(self.driver)
-       add_player_form.title_of_page()
-       add_player_form.type_in_email('player1@gmail.com')
-       add_player_form.type_in_name('Player 1')
-       add_player_form.type_in_surname('Playerowski')
-       add_player_form.type_in_phone('999999999')
-       add_player_form.type_in_weight('999999999')
-       add_player_form.type_in_height('99999999')
-       add_player_form.type_in_date_of_birth('31.01.2025')
-       add_player_form.click_on_the_leg_select_menu()
-       add_player_form.click_on_the_right_leg_option()
-       add_player_form.type_in_club('WildGoats')
-       add_player_form.type_in_level('junior')
-       add_player_form.type_in_main_position('defender')
-       add_player_form.type_in_second_position('midfielder')
-       add_player_form.click_on_the_district_select_menu()
-       add_player_form.click_on_the_lodz_district_option()
-       add_player_form.type_in_achievements('winner of the Pipidówek Goat Cup, 3 goals in 1 second')
-       add_player_form.click_on_the_add_language_button()
-       add_player_form.type_in_language('english')
-       add_player_form.click_on_the_add_language_button()
-       add_player_form.type_in_second_language('japanese')
-       add_player_form.click_on_the_add_youtube_link_button()
-       add_player_form.type_in_youtube_link('https://www.youtube.com/watch?v=gDgFXMKA6QU')
-       add_player_form.click_on_the_submit_button()
+        add_player_form = AddPlayerForm(self.driver)
+        add_player_form.title_of_page()
+        add_player_form.type_in_email('player1@gmail.com')
+        add_player_form.type_in_name('Player 1')
+        add_player_form.type_in_surname('Playerowski')
+        add_player_form.type_in_phone('999999999')
+        add_player_form.type_in_weight('999999999')
+        add_player_form.type_in_height('99999999')
+        add_player_form.type_in_date_of_birth('31.01.2025')
+        add_player_form.click_on_the_leg_select_menu()
+        add_player_form.click_on_the_right_leg_option()
+        add_player_form.type_in_club('WildGoats')
+        add_player_form.type_in_level('junior')
+        add_player_form.type_in_main_position('defender')
+        add_player_form.type_in_second_position('midfielder')
+        add_player_form.click_on_the_district_select_menu()
+        add_player_form.click_on_the_lodz_district_option()
+        add_player_form.type_in_achievements('winner of the Pipidówek Goat Cup, 3 goals in 1 second')
+        add_player_form.click_on_the_add_language_button()
+        add_player_form.type_in_language('english')
+        add_player_form.click_on_the_add_language_button()
+        add_player_form.type_in_second_language('japanese')
+        add_player_form.click_on_the_add_youtube_link_button()
+        add_player_form.type_in_youtube_link('https://www.youtube.com/watch?v=gDgFXMKA6QU')
+        add_player_form.click_on_the_submit_button()
 
-       time.sleep(7)
+        time.sleep(7)
 
-   @classmethod
-   def tearDown(self):
-       self.driver.quit()
+    @classmethod
+    def tearDown(self):
+        self.driver.quit()
