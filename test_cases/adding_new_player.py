@@ -3,15 +3,16 @@ import unittest
 import time
 from selenium import webdriver
 
-from pages.add_a_player import AddPlayerForm
+from pages.add_a_player_form import AddPlayerForm
 from pages.dashboard import Dashboard
-from pages.login_page import LoginPage
 from test_cases.login_to_the_system import TestLoginPage
 
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
 class TestAddPlayerForm(unittest.TestCase):
+
+
 
     @classmethod
     def setUp(self):
@@ -24,12 +25,9 @@ class TestAddPlayerForm(unittest.TestCase):
     def test_add_a_player(self):
 
         TestLoginPage.test_log_in_to_the_system(self) # use all tests used in method: test_log_in_to_the_system from object TestLoginPage
-        time.sleep(2)
 
         dashboard_page = Dashboard(self.driver)
         dashboard_page.click_on_the_add_player_button()  # click on the add player button (dashboard)
-
-        time.sleep(2)
 
         add_player_form = AddPlayerForm(self.driver)
         add_player_form.title_of_page()
@@ -57,7 +55,6 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form.type_in_youtube_link('https://www.youtube.com/watch?v=gDgFXMKA6QU')
         add_player_form.click_on_the_submit_button()
 
-        time.sleep(7)
 
     @classmethod
     def tearDown(self):

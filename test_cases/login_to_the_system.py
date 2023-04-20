@@ -28,7 +28,9 @@ class TestLoginPage(unittest.TestCase):
 
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()  # check if the title of the opened page is correct (dashboard)
-        time.sleep(5)
+
+        '''time.sleep (5)''' # ta linia sprawia, że test zatrzymał się na 5 sekund,
+        # a dopiero następnie zaczął wykonywać kolejne linie kodu. Ale tu zastępujemy ją Explicit wait
 
     @classmethod
     def tearDown(self):
