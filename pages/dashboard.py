@@ -25,3 +25,6 @@ class Dashboard(BasePage):
 
     def click_on_the_add_player_button(self):
         self.click_on_the_element(self.add_player_button_xpath)
+
+    def click_on_the_players_button(self):
+        self.click_on_the_element(self.players_button_xpath)

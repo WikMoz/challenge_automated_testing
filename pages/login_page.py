@@ -24,9 +24,12 @@ class LoginPage(BasePage):
     expected_title_of_remind_password_button_in_polish = "Przypomnij hasło"
     expected_title_of_remind_password_button_in_english = "Remind password"
     title_of_remind_password_button_xpath = "//div/div[1]/a"
-    expected_title_of_sign_in_button_in_polish = "Zaloguj się"
-    expected_title_of_sign_in_button_in_english = "Sign in"
-    title_of_sign_in_button_xpath = 
+    expected_title_of_sign_in_button_in_polish = "ZALOGUJ"
+    expected_title_of_sign_in_button_in_english = "SIGN IN"
+    title_of_sign_in_button_xpath = "//button/span[1]"
+    expected_title_of_validation = "Identifier or password invalid."
+    title_of_validation_xpath = "//div[3]/span"
+
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
@@ -75,3 +78,15 @@ class LoginPage(BasePage):
     def title_of_remind_password_field_en(self):
         self.assert_element_text(self.driver, self.title_of_remind_password_button_xpath,
                                  self.expected_title_of_remind_password_button_in_english)
+
+    def title_of_sign_in_button_pl(self):
+        self.assert_element_text(self.driver, self.title_of_sign_in_button_xpath,
+                                 self.expected_title_of_sign_in_button_in_polish)
+
+    def title_of_sign_in_button_en(self):
+        self.assert_element_text(self.driver, self.title_of_sign_in_button_xpath,
+                                 self.expected_title_of_sign_in_button_in_english)
+
+    def title_of_validation(self):
+        self.assert_element_text(self.driver, self.title_of_validation_xpath,
+                                 self.expected_title_of_validation)
