@@ -22,6 +22,8 @@ class TestPlayersTable(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
+        super(TestPlayersTable, self).setUp(self)
+
     def test_search_a_player(self):
 
         TestLoginPage.test_log_in_to_the_system(self)
