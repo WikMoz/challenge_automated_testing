@@ -35,3 +35,30 @@ class TestLoginPage(unittest.TestCase):
     @classmethod
     def tearDown(self):
         self.driver.quit()
+
+    @classmethod
+    def setUp(self):
+        os.chmod(DRIVER_PATH, 755)
+        self.driver = webdriver.Chrome(executable_path=DRIVER_PATH)
+        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
+        self.driver.fullscreen_window()
+        self.driver.implicitly_wait(IMPLICITLY_WAIT)
+    def test_changing_language_at_login_page(self):
+        user_login = LoginPage(self.driver)
+        user_login.click_on_the_language_select_menu_button()
+        user_login.click_on_the_polish_language_option()
+        user_login.title_of_polish_language_option()
+        user_login.title_of_password_field_pl()
+        user_login.title_of_remind_password_field_pl()
+        user_login.click_on_the_english_language_option()
+        user_login.title_of_english_language_option()
+        user_login.title_of_password_field_en()
+        user_login.title_of_remind_password_field_en()
+        user_login.title_of_box()
+
+
+
+
+    @classmethod
+    def tearDown(self):
+        self.driver.quit()
