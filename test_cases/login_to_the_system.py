@@ -70,6 +70,6 @@ class TestLoginPage(unittest.TestCase):
         user_login.click_on_the_sign_in_button()
         user_login.title_of_validation()
 
-    time.sleep(5)
+        time.sleep(5)
 
 

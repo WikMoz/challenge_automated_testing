@@ -32,7 +32,7 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form = AddPlayerForm(self.driver)
         add_player_form.title_of_page()
         add_player_form.type_in_email('player1@gmail.com')
-        add_player_form.type_in_name('Player 2')
+        add_player_form.type_in_name('Player 4')
         add_player_form.type_in_surname('Playerowski')
         add_player_form.type_in_phone('999999999')
         add_player_form.type_in_weight('80')
@@ -40,7 +40,7 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form.type_in_date_of_birth('31.01.2000')
         add_player_form.click_on_the_leg_select_menu()
         add_player_form.click_on_the_right_leg_option()
-        add_player_form.type_in_club('WildGoats')
+        add_player_form.type_in_club('Wild Goats')
         add_player_form.type_in_level('junior')
         add_player_form.type_in_main_position('defender')
         add_player_form.type_in_second_position('midfielder')
@@ -55,7 +55,6 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form.type_in_youtube_link('https://www.youtube.com/watch?v=gDgFXMKA6QU')
         add_player_form.click_on_the_submit_button()
 
+        time.sleep(6)
 
-    @classmethod
-    def tearDown(self):
-        self.driver.quit()
+

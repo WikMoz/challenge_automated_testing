@@ -3,15 +3,14 @@ import unittest
 import time
 from selenium import webdriver
 
-from pages.add_a_player_form import AddPlayerForm
 from pages.dashboard import Dashboard
-from pages.players_table import PlayersTable
+from pages.players_table import FilterPlayersTable
 from test_cases.login_to_the_system import TestLoginPage
 
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestAddPlayerForm(unittest.TestCase):
+class TestPlayersTable(unittest.TestCase):
 
 
 
@@ -23,39 +22,28 @@ class TestAddPlayerForm(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def search_a_player(self):
+    def test_search_a_player(self):
 
         TestLoginPage.test_log_in_to_the_system(self)
         dashboard_page = Dashboard(self.driver)
         dashboard_page.click_on_the_players_button()
 
-        players_table = PlayersTable(self.driver)
-        add_player_form.title_of_page()
-        add_player_form.type_in_email('player1@gmail.com')
-        add_player_form.type_in_name('Player 2')
-        add_player_form.type_in_surname('Playerowski')
-        add_player_form.type_in_phone('999999999')
-        add_player_form.type_in_weight('80')
-        add_player_form.type_in_height('190')
-        add_player_form.type_in_date_of_birth('31.01.2000')
-        add_player_form.click_on_the_leg_select_menu()
-        add_player_form.click_on_the_right_leg_option()
-        add_player_form.type_in_club('WildGoats')
-        add_player_form.type_in_level('junior')
-        add_player_form.type_in_main_position('defender')
-        add_player_form.type_in_second_position('midfielder')
-        add_player_form.click_on_the_district_select_menu()
-        add_player_form.click_on_the_lodz_district_option()
-        add_player_form.type_in_achievements('winner of the Winners Cup, 3 goals in 10 seconds')
-        add_player_form.click_on_the_add_language_button()
-        add_player_form.type_in_language('english')
-        add_player_form.click_on_the_add_language_button()
-        add_player_form.type_in_second_language('japanese')
-        add_player_form.click_on_the_add_youtube_link_button()
-        add_player_form.type_in_youtube_link('https://www.youtube.com/watch?v=gDgFXMKA6QU')
-        add_player_form.click_on_the_submit_button()
+        filter_players_table = FilterPlayersTable(self.driver)
+        filter_players_table.click_on_the_filter_table_button()
+        filter_players_table.type_in_name('Player 4')
+        filter_players_table.type_in_surname('Playerowski')
+        filter_players_table.type_in_club('Wild Goats')
+        filter_players_table.type_in_main_position('defender')
+        filter_players_table.type_in_age_min('20')
+        filter_players_table.type_in_age_max('24')
+        time.sleep(3)
+        filter_players_table.click_on_the_closing_button()
+        time.sleep(3)
+        filter_players_table.searched_name()
+        filter_players_table.searched_surname()
+        filter_players_table.searched_age()
+        filter_players_table.searched_club()
+        filter_players_table.searched_main_position()
 
 
-    @classmethod
-    def tearDown(self):
-        self.driver.quit()
+

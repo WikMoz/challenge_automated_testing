@@ -6,7 +6,7 @@ from pages.base_page import BasePage
 class Dashboard(BasePage):
 
     main_page_button_xpath = "//ul[1]/div[1]/div[2]/span"
-    players_button_xpath = "//*[contains(@class,'jss29 jss31')]//child::span"
+    players_button_xpath = "//ul[1]/div[2]/div[2]/span"
     select_language_button_xpath = "//ul[2]/div[1]/div[2]/span"
     sign_out_button_xpath = "//ul[2]/div[2]/div[2]/span"
     dev_team_contact_hyperlink_xpath = "//div[3]/a/span[1]"
