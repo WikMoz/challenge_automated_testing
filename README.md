@@ -162,14 +162,17 @@ Cele zadania 4:
 3. [x] zaprojektować i napisać test case’y,
 4. [x] zautomatyzować stronę internetową na podstawie swoich TC.
 
+- [pages](https://github.com/WikMoz/challenge_automated_testing/tree/main/pages)
+- [test cases](https://github.com/WikMoz/challenge_automated_testing/tree/main/test_cases)
+
 ## Podzadanie 1
 ### [Test cases](https://docs.google.com/spreadsheets/d/1SZTZz8OM2_jrhuyFVGiuhYWc3yNVn80e2h4A2Dd-aKg/edit?usp=share_link)
 ## Podzadanie 2
-### [Test cases - code](C:\Users\mofyp\GitHub\challenge_automated_testing\test_cases)
+### [Test cases - code](https://github.com/WikMoz/challenge_automated_testing/tree/main/test_cases)
 ## Podzadanie 3
 ### [Screencasts](https://drive.google.com/drive/folders/13-Fy6u7Ag0Q4AnPPLt_SxCRiXCwA51wn?usp=share_link)
 ## Podzadanie 4
-### [Screenshots](C:\Users\mofyp\GitHub\challenge_automated_testing\screenshots)
-### [Test results](C:\Users\mofyp\GitHub\challenge_automated_testing\Test results)
+### [Screenshots](https://github.com/WikMoz/challenge_automated_testing/tree/main/screenshots)
+### [Test results](https://github.com/WikMoz/challenge_automated_testing/tree/main/Test%20results)
 
 ---
