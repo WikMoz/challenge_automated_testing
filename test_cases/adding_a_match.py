@@ -32,4 +32,3 @@ class TestAddingAMatch(unittest.TestCase):
         player_panel = PlayerPanel(self.driver)
         player_panel.click_on_the_matches_of_a_player_button()
         player_panel.click_on_the_add_match_button()
-        time.sleep(3)

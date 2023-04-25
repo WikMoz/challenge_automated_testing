@@ -39,7 +39,7 @@ class TestLoginPage(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
-    @classmethod
+
     def test_changing_language_at_login_page(self):
         user_login = LoginPage(self.driver)
         user_login.click_on_the_language_select_menu_button()
@@ -60,7 +60,7 @@ class TestLoginPage(unittest.TestCase):
         user_login.title_of_password_field_en()
         user_login.title_of_remind_password_field_en()
         user_login.title_of_sign_in_button_en()
-        time.sleep(3)
+
 
     def test_log_in_to_the_system_with_invalid_password(self):
         user_login = LoginPage(self.driver)
@@ -70,6 +70,6 @@ class TestLoginPage(unittest.TestCase):
         user_login.type_in_password('1234')
         user_login.click_on_the_sign_in_button()
         user_login.title_of_validation()
-        time.sleep(5)
+
 
 

@@ -55,6 +55,6 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form.type_in_youtube_link('https://www.youtube.com/watch?v=gDgFXMKA6QU')
         add_player_form.click_on_the_submit_button()
 
-        time.sleep(6)
+
 
 

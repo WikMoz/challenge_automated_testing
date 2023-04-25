@@ -1,6 +1,7 @@
 import os
 import unittest
 
+
 from selenium import webdriver
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
@@ -30,6 +31,7 @@ class TestMediumPage(unittest.TestCase):
 
     @classmethod
     def setUp(self):
+        #metoda setUp (), Test runner uruchomi tę metodę przed każdym testem
         os.chmod(DRIVER_PATH, 755)
         self.driver = webdriver.Chrome(executable_path=DRIVER_PATH)
         self.driver.get('https://medium.com/')
@@ -48,6 +50,5 @@ class TestMediumPage(unittest.TestCase):
     @classmethod
     def tearDown(self):
         self.driver.quit()
-
-
+    # metoda tearDown (), Test runner wywoła tę metodę po każdym teście
 
