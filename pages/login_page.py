@@ -1,3 +1,5 @@
+import time
+
 from pages.base_page import BasePage
 
 
@@ -90,3 +92,11 @@ class LoginPage(BasePage):
     def title_of_validation(self):
         self.assert_element_text(self.driver, self.title_of_validation_xpath,
                                  self.expected_title_of_validation)
+
+    def select_language(self, language):
+        self.click_on_the_element(self.language_select_menu_xpath)
+        time.sleep(1)
+        if language == "english":
+            self.click_on_the_element(self.english_option)
+        else:
+            self.click_on_the_element(self.polish_option)
