@@ -174,12 +174,12 @@ Cele zadania 4:
 ### [Test cases - code](https://github.com/WikMoz/challenge_automated_testing/tree/main/test_cases)
 
 ## Podzadanie 3
-### [Screencasts](https://drive.google.com/drive/folders/13-Fy6u7Ag0Q4AnPPLt_SxCRiXCwA51wn?usp=share_link)
+### [Screencasts](https://drive.google.com/drive/folders/13-Fy6u7Ag0Q4AnPPLt_SxCRiXCwA51wn?usp=share_link) 📽
 
 ## Podzadanie 4 
 (dla chętnych)
 
-### [Screenshots](https://github.com/WikMoz/challenge_automated_testing/tree/main/screenshots)
+### [Screenshots](https://github.com/WikMoz/challenge_automated_testing/tree/main/screenshots) 📸
 ### [Test results](https://github.com/WikMoz/challenge_automated_testing/tree/main/Test%20results)
 
 ## Podzadanie 5
