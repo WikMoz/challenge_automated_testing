@@ -83,5 +83,12 @@ class TestLoginPage(unittest.TestCase):
         var_shot = pyautogui.screenshot()
         var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC02.png')
 
+    def test_change_language(self):
+        user_login = LoginPage(self.driver)
+        user_login.select_language("English")
+        time.sleep(5)
+        user_login.select_language("Polish")
+        time.sleep(5)
+
 
 

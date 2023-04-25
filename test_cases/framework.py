@@ -3,6 +3,8 @@ import unittest
 
 
 from selenium import webdriver
+
+from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
@@ -53,3 +55,9 @@ class TestMediumPage(unittest.TestCase):
         self.driver.quit()
     # metoda tearDown (), Test runner wywoła tę metodę po każdym teście
 
+    def test_change_language(self):
+        user_login = LoginPage(self.driver)
+        user_login.select_language("english")
+        time.sleep(5)
+        user_login.select_language("polish")
+        time.sleep(5)

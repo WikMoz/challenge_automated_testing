@@ -5,6 +5,7 @@ import time
 import pyautogui
 from selenium import webdriver
 
+from pages.add_a_match_form import AddAMatchForm
 from pages.player_panel import PlayerPanel
 from pages.players_table import FilterPlayersTable
 from test_cases.searching_players import TestPlayersTable
@@ -35,7 +36,8 @@ class TestAddingAMatch(unittest.TestCase):
         player_panel.click_on_the_matches_of_a_player_button()
         player_panel.click_on_the_add_match_button()
 
-        time.sleep(3)
+        add_a_match_form = AddAMatchForm(self.driver)
+        add_a_match_form.wait_for_element()
 
         var_shot = pyautogui.screenshot()
-        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC05.png')
+        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC05-1.png')

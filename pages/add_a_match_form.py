@@ -1,7 +1,7 @@
 from pages.base_page import BasePage
 
 
-class add_a_match_form(BasePage):
+class AddAMatchForm(BasePage):
     my_team_input_xpath = "//input[@name='myTeam']"
     enemy_team_input_xpath = "//input[@name='enemyTeam']"
     my_team_score_input_xpath = "//div[3]/div/div/input"
@@ -14,7 +14,10 @@ class add_a_match_form(BasePage):
     time_played_input_xpath = "//div[9]/div/div/input"
     number_input_xpath = "//input[contains(@name,'number')]"
     web_match_input_xpath = "//div[11]/div/div/input"
-    
+    add_a_match_form_url = "https://www.scouts-test.futbolkolektyw.pl/en/players/6447e5147ccfb69252f31418/matches/add"
+    expected_title = "Adding match player Player 4 Playerowski"
 
 
+    def wait_for_element(self):
+        self.wait_for_element_to_be_clickable(self.my_team_input_xpath)
 

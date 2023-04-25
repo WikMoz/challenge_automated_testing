@@ -15,6 +15,10 @@ Zajrzyj tutaj :
   
 * [Zadanie 3 - PIERWSZY TEST I ASSERT](#zadanie-3)
 * [Zadanie 4 - REFACTOR, DEBUGGER I PRZYPADKI TESTOWE](#zadanie-4)
+  * [Podzadania 1](#podzadanie-1-1)
+  * [Podzadanie 2](#podzadanie-2-1)
+  * [Podzadanie 3](#podzadanie-3)
+  * [Podzadanie 4](#podzadanie-4-1)
 --- 
 
 # Zadanie 1 
@@ -139,11 +143,11 @@ _Wypisz wszystkie elementy znajdujące się na stronie, a następnie, pod każdy
 **PIERWSZY TEST I ASSERT**
 
 Cele zadania 3:
-1.[x] poznać framework, na którym będziemy pracować,
-2.[x] klikać w elementy na stronie za pomocą komend,
-3.[x] wypełniać pola tekstem za pomocą komend,
-4.[x] wykorzystać assert title, 
-5.[x] uruchomić test.
+1. [x] poznać framework, na którym będziemy pracować,
+2. [x] klikać w elementy na stronie za pomocą komend,
+3. [x] wypełniać pola tekstem za pomocą komend,
+4. [x] wykorzystać assert title, 
+5. [x] uruchomić test.
 
 
 ---
@@ -153,9 +157,19 @@ Cele zadania 3:
 **REFACTOR, DEBUGGER I PRZYPADKI TESTOWE**
 
 Cele zadania 4:
-1.[x] wykonać refactor naszego kodu,
-2.[x] dowiedzieć się jak pracować z debuggerem,
-3.[x] zaprojektować i napisać test case’y,
-4.[x] zautomatyzować stronę internetową na podstawie swoich TC.
+1. [x] wykonać refactor naszego kodu,
+2. [x] dowiedzieć się jak pracować z debuggerem,
+3. [x] zaprojektować i napisać test case’y,
+4. [x] zautomatyzować stronę internetową na podstawie swoich TC.
+
+## Podzadanie 1
+### [Test cases](https://docs.google.com/spreadsheets/d/1SZTZz8OM2_jrhuyFVGiuhYWc3yNVn80e2h4A2Dd-aKg/edit?usp=share_link)
+## Podzadanie 2
+### [Test cases - code](C:\Users\mofyp\GitHub\challenge_automated_testing\test_cases)
+## Podzadanie 3
+### [Screencasts](https://drive.google.com/drive/folders/13-Fy6u7Ag0Q4AnPPLt_SxCRiXCwA51wn?usp=share_link)
+## Podzadanie 4
+### [Screenshots](C:\Users\mofyp\GitHub\challenge_automated_testing\screenshots)
+### [Test results](C:\Users\mofyp\GitHub\challenge_automated_testing\Test results)
 
 ---

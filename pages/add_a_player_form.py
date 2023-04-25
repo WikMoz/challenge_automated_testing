@@ -56,6 +56,7 @@ class AddPlayerForm(BasePage):
         self.click_on_the_element(self.leg_select_menu_xpath)
 
     def click_on_the_right_leg_option(self):
+        self.wait_for_element_to_be_clickable(self.right_leg_option_xpath)
         self.click_on_the_element(self.right_leg_option_xpath)
 
     def type_in_club(self, club_name):
@@ -74,6 +75,7 @@ class AddPlayerForm(BasePage):
         self.click_on_the_element(self.district_select_menu_field_xpath)
 
     def click_on_the_lodz_district_option(self):
+        self.wait_for_element_to_be_clickable(self.lodz_district_option_xpath)
         self.click_on_the_element(self.lodz_district_option_xpath)
 
     def type_in_achievements(self, achievements):
@@ -95,4 +97,5 @@ class AddPlayerForm(BasePage):
         self.field_send_keys(self.youtube_field_xpath, link)
 
     def click_on_the_submit_button(self):
+        self.wait_for_element_to_be_clickable(self.submit_button_xpath)
         self.click_on_the_element(self. submit_button_xpath)

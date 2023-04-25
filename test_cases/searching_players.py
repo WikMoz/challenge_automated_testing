@@ -41,14 +41,10 @@ class TestPlayersTable(unittest.TestCase):
         filter_players_table.type_in_age_min('20')
         filter_players_table.type_in_age_max('24')
 
-        time.sleep(2)
+        filter_players_table.click_on_the_closing_button()
 
         var_shot = pyautogui.screenshot()
         var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC04-1.png')
-
-        filter_players_table.click_on_the_closing_button()
-
-        time.sleep(3)
 
         filter_players_table.searched_name()
         filter_players_table.searched_surname()

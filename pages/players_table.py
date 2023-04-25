@@ -58,6 +58,7 @@ class FilterPlayersTable(BasePage):
         self.click_on_the_element(self.filter_closing_button_xpath)
 
     def searched_name(self):
+        self.wait_for_element_to_be_clickable(self.searched_name_xpath)
         self.assert_element_text(self.driver, self.searched_name_xpath, self.expected_name_title)
 
     def searched_surname(self):
@@ -73,4 +74,5 @@ class FilterPlayersTable(BasePage):
         self.assert_element_text(self.driver, self.searched_main_position_xpath, self.expected_main_position_title)
 
     def click_on_the_player_choosing_button(self):
+        self.wait_for_element_to_be_clickable(self.player_choosing_button)
         self.click_on_the_element(self.player_choosing_button)
