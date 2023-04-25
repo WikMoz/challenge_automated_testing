@@ -1,6 +1,8 @@
 import os
 import unittest
 import time
+
+import pyautogui
 from selenium import webdriver
 
 from pages.dashboard import Dashboard
@@ -38,12 +40,24 @@ class TestPlayersTable(unittest.TestCase):
         filter_players_table.type_in_main_position('defender')
         filter_players_table.type_in_age_min('20')
         filter_players_table.type_in_age_max('24')
+
+        time.sleep(2)
+
+        var_shot = pyautogui.screenshot()
+        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC04-1.png')
+
         filter_players_table.click_on_the_closing_button()
+
+        time.sleep(3)
+
         filter_players_table.searched_name()
         filter_players_table.searched_surname()
         filter_players_table.searched_age()
         filter_players_table.searched_club()
         filter_players_table.searched_main_position()
+
+        var_shot = pyautogui.screenshot()
+        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC04-2.png')
 
 
 

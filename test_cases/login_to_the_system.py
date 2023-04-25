@@ -1,6 +1,8 @@
 import os
 import unittest
 import time
+import pyautogui
+
 from selenium import webdriver
 from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
@@ -50,6 +52,10 @@ class TestLoginPage(unittest.TestCase):
         user_login.title_of_sign_in_button_en()
         user_login.click_on_the_language_select_menu_button()
         user_login.click_on_the_polish_language_option()
+
+        var_shot = pyautogui.screenshot()
+        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC01-polish.png')
+
         user_login.title_of_polish_language_option()
         user_login.title_of_password_field_pl()
         user_login.title_of_remind_password_field_pl()
@@ -61,6 +67,10 @@ class TestLoginPage(unittest.TestCase):
         user_login.title_of_remind_password_field_en()
         user_login.title_of_sign_in_button_en()
 
+        var_shot = pyautogui.screenshot()
+        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC01-english.png')
+
+
 
     def test_log_in_to_the_system_with_invalid_password(self):
         user_login = LoginPage(self.driver)
@@ -70,6 +80,8 @@ class TestLoginPage(unittest.TestCase):
         user_login.type_in_password('1234')
         user_login.click_on_the_sign_in_button()
         user_login.title_of_validation()
+        var_shot = pyautogui.screenshot()
+        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC02.png')
 
 
 

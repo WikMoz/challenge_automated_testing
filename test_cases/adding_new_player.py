@@ -1,5 +1,6 @@
 import os
 import unittest
+import pyautogui
 import time
 from selenium import webdriver
 
@@ -45,8 +46,14 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form.type_in_main_position('defender')
         add_player_form.type_in_second_position('midfielder')
         add_player_form.click_on_the_district_select_menu()
+        time.sleep(3)
         add_player_form.click_on_the_lodz_district_option()
+        time.sleep(2)
         add_player_form.type_in_achievements('winner of the Winners Cup, 3 goals in 10 seconds')
+
+        var_shot = pyautogui.screenshot()
+        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC03-1.png')
+
         add_player_form.click_on_the_add_language_button()
         add_player_form.type_in_language('english')
         add_player_form.click_on_the_add_language_button()
@@ -54,6 +61,10 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form.click_on_the_add_youtube_link_button()
         add_player_form.type_in_youtube_link('https://www.youtube.com/watch?v=gDgFXMKA6QU')
         add_player_form.click_on_the_submit_button()
+
+        time.sleep(3)
+        var_shot = pyautogui.screenshot()
+        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC03-2.png')
 
 
 

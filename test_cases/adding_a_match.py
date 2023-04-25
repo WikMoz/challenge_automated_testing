@@ -1,6 +1,8 @@
 import os
 import unittest
 import time
+
+import pyautogui
 from selenium import webdriver
 
 from pages.player_panel import PlayerPanel
@@ -32,3 +34,8 @@ class TestAddingAMatch(unittest.TestCase):
         player_panel = PlayerPanel(self.driver)
         player_panel.click_on_the_matches_of_a_player_button()
         player_panel.click_on_the_add_match_button()
+
+        time.sleep(3)
+
+        var_shot = pyautogui.screenshot()
+        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC05.png')
