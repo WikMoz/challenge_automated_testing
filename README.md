@@ -1,7 +1,7 @@
 # DARE IT - Testy automatyczne + Python
 
 ---
-Zajrzyj tutaj :
+Tutaj znajdziesz mój kod :
 - [pages](https://github.com/WikMoz/challenge_automated_testing/tree/main/pages)
 - [test cases](https://github.com/WikMoz/challenge_automated_testing/tree/main/test_cases)
 ---
@@ -185,7 +185,7 @@ Cele zadania 4:
 ## Podzadanie 5
 (dla chętnych)
 
-'''if...else''' --> 
+`if...else` --> [`def test_change_leg(self)`](https://github.com/WikMoz/challenge_automated_testing/blob/main/test_cases/adding_new_player.py)
 
 
 ---
