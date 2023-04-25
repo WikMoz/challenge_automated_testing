@@ -96,7 +96,7 @@ class LoginPage(BasePage):
     def select_language(self, language):
         self.click_on_the_element(self.language_select_menu_xpath)
         time.sleep(1)
-        if language == "English":
-            self.click_on_the_element(self.title_of_english_language_option_xpath)
+        if language == "english":
+            self.click_on_the_element(self.english_language_option_xpath)
         else:
-            self.click_on_the_element(self.title_of_polish_language_option_xpath)
+            self.click_on_the_element(self.polish_language_option_xpath)

@@ -85,9 +85,9 @@ class TestLoginPage(unittest.TestCase):
 
     def test_change_language(self):
         user_login = LoginPage(self.driver)
-        user_login.select_language("English")
+        user_login.select_language("english")
         time.sleep(5)
-        user_login.select_language("Polish")
+        user_login.select_language("polski")
         time.sleep(5)
 
 

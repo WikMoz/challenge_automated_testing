@@ -66,6 +66,14 @@ class TestAddPlayerForm(unittest.TestCase):
         var_shot = pyautogui.screenshot()
         var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC03-2.png')
 
+    def test_change_leg(self):
+        TestLoginPage.test_log_in_to_the_system(self)
+        dashboard_page = Dashboard(self.driver)
+        dashboard_page.click_on_the_add_player_button()
 
+        add_player_form = AddPlayerForm(self.driver)
+        add_player_form.select_leg("right")
+        add_player_form.select_leg("left")
+        
 
 
