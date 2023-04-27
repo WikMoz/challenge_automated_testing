@@ -1,7 +1,7 @@
 import os
 import unittest
 import pyautogui
-import time
+
 from selenium import webdriver
 
 from pages.add_a_player_form import AddPlayerForm
@@ -74,6 +74,6 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form = AddPlayerForm(self.driver)
         add_player_form.select_leg("right")
         add_player_form.select_leg("left")
-        
+
 
 
