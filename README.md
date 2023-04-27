@@ -20,6 +20,8 @@ Tutaj znajdziesz mój kod :
   * [Podzadanie 3](#podzadanie-3)
   * [Podzadanie 4](#podzadanie-4-1)
   * [Podzadanie 5](#podzadanie-5)
+* [Zadanie 5 - Robot framework](#zadanie-5)
+  * [Podzadanie 1](#podzadanie-1-2)
   
 --- 
 
@@ -187,5 +189,16 @@ Cele zadania 4:
 
 `if...else` --> [`def test_change_leg(self)`](https://github.com/WikMoz/challenge_automated_testing/blob/main/test_cases/adding_new_player.py)
 
-
 ---
+
+# Zadanie 5
+**ROBOT FRAMEWORK**
+
+Cele zadania 5:
+1. [x] dowiedzieć się czym jest Smoke Tests
+2. [x] dowiedzieć się jak skonfigurować Suite Test
+3. [x] poznać nowy framework,
+4. [x] wygenerować automatycznie raport
+
+## Podzadanie 1
+[Robot framework repository ](https://github.com/WikMoz/scoutspanel_robotframework)
