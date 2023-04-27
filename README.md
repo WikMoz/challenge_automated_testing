@@ -1,7 +1,7 @@
 # DARE IT - Testy automatyczne + Python
 
 ---
-Zajrzyj tutaj :
+Tutaj znajdziesz mój kod :
 - [pages](https://github.com/WikMoz/challenge_automated_testing/tree/main/pages)
 - [test cases](https://github.com/WikMoz/challenge_automated_testing/tree/main/test_cases)
 ---
@@ -19,6 +19,8 @@ Zajrzyj tutaj :
   * [Podzadanie 2](#podzadanie-2-1)
   * [Podzadanie 3](#podzadanie-3)
   * [Podzadanie 4](#podzadanie-4-1)
+  * [Podzadanie 5](#podzadanie-5)
+  
 --- 
 
 # Zadanie 1 
@@ -167,12 +169,23 @@ Cele zadania 4:
 
 ## Podzadanie 1
 ### [Test cases](https://docs.google.com/spreadsheets/d/1SZTZz8OM2_jrhuyFVGiuhYWc3yNVn80e2h4A2Dd-aKg/edit?usp=share_link)
+
 ## Podzadanie 2
 ### [Test cases - code](https://github.com/WikMoz/challenge_automated_testing/tree/main/test_cases)
+
 ## Podzadanie 3
-### [Screencasts](https://drive.google.com/drive/folders/13-Fy6u7Ag0Q4AnPPLt_SxCRiXCwA51wn?usp=share_link)
-## Podzadanie 4
-### [Screenshots](https://github.com/WikMoz/challenge_automated_testing/tree/main/screenshots)
+### [Screencasts](https://drive.google.com/drive/folders/13-Fy6u7Ag0Q4AnPPLt_SxCRiXCwA51wn?usp=share_link) 📽
+
+## Podzadanie 4 
+(dla chętnych)
+
+### [Screenshots](https://github.com/WikMoz/challenge_automated_testing/tree/main/screenshots) 📸
 ### [Test results](https://github.com/WikMoz/challenge_automated_testing/tree/main/Test%20results)
+
+## Podzadanie 5
+(dla chętnych)
+
+`if...else` --> [`def test_change_leg(self)`](https://github.com/WikMoz/challenge_automated_testing/blob/main/test_cases/adding_new_player.py)
+
 
 ---
