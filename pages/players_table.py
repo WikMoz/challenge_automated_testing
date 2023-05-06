@@ -2,7 +2,7 @@ from pages.base_page import BasePage
 
 
 class FilterPlayersTable(BasePage):
-    players_table_url = "https://scouts-test.futbolkolektyw.pl/pl/players"
+    players_table_url = "https://scouts.futbolkolektyw.pl/en/players"
     filter_table_button_xpath = "//*[@data-testid = 'Filter Table-iconButton']"
     filter_name_field_xpath = "//div[1]/div/div/div/input"
     filter_surname_field_xpath = "//div[2]/div/div/div/input"
