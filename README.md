@@ -224,11 +224,11 @@ Cele zadania 6:
 4. [x] stworzyć repozytorium z funkcjonalnym portfolio w README file.
 
 ## Podzadanie 2
-[Bug report](https://docs.google.com/spreadsheets/d/1Box018tjWX_dN2I6KCCwPfX5f0vzeeOLH3Y743uoJKg/edit?usp=share_link)
+[Bug report](https://docs.google.com/spreadsheets/d/1Box018tjWX_dN2I6KCCwPfX5f0vzeeOLH3Y743uoJKg/edit?usp=share_link) 🐛
 
 ## Podzadanie 3
-[Test report](https://docs.google.com/spreadsheets/d/10aMmj4evYu9VtLWLdEiC9k36R_p-sr50jVYqDm6iWgU/edit?usp=share_link)
+[Test report](https://docs.google.com/spreadsheets/d/10aMmj4evYu9VtLWLdEiC9k36R_p-sr50jVYqDm6iWgU/edit?usp=share_link) 📃
 
 ## Podzadanie 4
-[Portfolio](https://github.com/WikMoz/Portfolio)
+[Portfolio](https://github.com/WikMoz/Portfolio) 🖼
 
