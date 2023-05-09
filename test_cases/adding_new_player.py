@@ -32,8 +32,8 @@ class TestAddPlayerForm(unittest.TestCase):
 
         add_player_form = AddPlayerForm(self.driver)
         add_player_form.title_of_page()
-        add_player_form.type_in_email('player1@gmail.com')
-        add_player_form.type_in_name('Player 4')
+        add_player_form.type_in_email('player2@gmail.com')
+        add_player_form.type_in_name('Player 2')
         add_player_form.type_in_surname('Playerowski')
         add_player_form.type_in_phone('999999999')
         add_player_form.type_in_weight('80')
@@ -60,11 +60,32 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form.type_in_second_language('japanese')
         add_player_form.click_on_the_add_youtube_link_button()
         add_player_form.type_in_youtube_link('https://www.youtube.com/watch?v=gDgFXMKA6QU')
+        add_player_form.type_in_facebook_link('https://facebook.com')
         add_player_form.click_on_the_submit_button()
 
 
         var_shot = pyautogui.screenshot()
         var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC03-2.png')
+
+    def test_assert_fields(self):
+        add_player_form = AddPlayerForm(self.driver)
+        add_player_form.assert_name()
+        add_player_form.assert_email()
+        add_player_form.assert_surname()
+        add_player_form.assert_phone()
+        add_player_form.assert_weigt()
+        add_player_form.assert_height()
+        add_player_form.assert_date_of_birth()
+        add_player_form.assert_leg()
+        add_player_form.assert_club()
+        add_player_form.assert_level()
+        add_player_form.assert_main_position()
+        add_player_form.assert_second_position()
+        add_player_form.assert_district()
+        add_player_form.assert_language()
+        add_player_form.assert_second_language()
+        add_player_form.assert_youtube()
+        add_player_form.assert_facebook()
 
     def test_change_leg(self):
         TestLoginPage.test_log_in_to_the_system(self)
@@ -74,6 +95,5 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form = AddPlayerForm(self.driver)
         add_player_form.select_leg("right")
         add_player_form.select_leg("left")
-
 
 

@@ -31,8 +31,7 @@ class TestLoginPage(unittest.TestCase):
         user_login.type_in_password('Test-1234')  # enter "Test-1234" in the password field
         user_login.click_on_the_sign_in_button()  # click on the sign in button
 
-        dashboard_page = Dashboard(self.driver)
-        dashboard_page.title_of_page()  # check if the title of the opened page is correct (dashboard)
+          # check if the title of the opened page is correct (dashboard)
 
         '''time.sleep (5)'''  # ta linia sprawia, że test zatrzymał się na 5 sekund,
         # a dopiero następnie zaczął wykonywać kolejne linie kodu. Ale tu zastępujemy ją Explicit wait
@@ -70,6 +69,7 @@ class TestLoginPage(unittest.TestCase):
         var_shot = pyautogui.screenshot()
         var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC01-english.png')
 
+    def assert_main_page_title
 
 
     def test_log_in_to_the_system_with_invalid_password(self):

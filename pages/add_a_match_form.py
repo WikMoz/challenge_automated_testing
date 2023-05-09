@@ -15,7 +15,7 @@ class AddAMatchForm(BasePage):
     number_input_xpath = "//input[contains(@name,'number')]"
     web_match_input_xpath = "//div[11]/div/div/input"
     add_a_match_form_url = "https://www.scouts-test.futbolkolektyw.pl/en/players/6447e5147ccfb69252f31418/matches/add"
-    expected_title = "Adding match player Player 4 Playerowski"
+    expected_title = "Adding match player Player 2 Playerowski"
 
 
     def wait_for_element(self):
