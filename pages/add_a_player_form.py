@@ -4,7 +4,7 @@ from pages.base_page import BasePage
 
 
 class AddPlayerForm(BasePage):
-    add_player_form_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
+    add_player_form_url = "https://scouts.futbolkolektyw.pl/en/players/add"
     expected_title = "Add player"
     email_field_xpath = "//div[2]/div/div[1]/div/div/input"
     expected_email = "player2@gmail.com"
@@ -33,7 +33,7 @@ class AddPlayerForm(BasePage):
     second_position_field_xpath = "//div[12]/div/div/input"
     expected_second_position = "midfielder"
     district_select_menu_field_xpath = "//*[@id='mui-component-select-district']"
-    lodz_district_option_xpath = "//*[@data-value='lodzkie']"
+    lodz_district_option_xpath = "//div[3]/ul/li[5]"
     expected_district = "Łódź"
     achievements_field_xpath = "//div[14]/div/div/input"
     expected_achievements = "winner of the Winners Cup, 3 goals in 10 seconds"
@@ -48,6 +48,7 @@ class AddPlayerForm(BasePage):
     facebook_field_xpath = "//div[18]/div/div/input"
     expected_facebook_link = "https://facebook.com"
     submit_button_xpath = "//div[3]/button[1]/span[1]"
+    edit_player_title_xpath = "//form/div[1]/div/span"
 
     def title_of_page(self):
         assert self.get_page_title(self.add_player_form_url) == self.expected_title
@@ -118,7 +119,7 @@ class AddPlayerForm(BasePage):
         self.field_send_keys(self.youtube_field_xpath, link)
 
     def type_in_facebook_link(self, link):
-        self.field_send_keys((self.facebook_field_xpath, link))
+        self.field_send_keys(self.facebook_field_xpath, link)
 
     def click_on_the_submit_button(self):
         self.wait_for_element_to_be_clickable(self.submit_button_xpath)
@@ -132,6 +133,8 @@ class AddPlayerForm(BasePage):
             self.click_on_the_element(self.left_leg_option_xpath)
 
     def assert_name (self):
+
+        self.wait_for_element_to_be_clickable(self.name_field_xpath)
         self.assert_element_text(self.driver, self.name_field_xpath, self.expected_name)
 
     def assert_surname(self):

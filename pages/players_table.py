@@ -25,7 +25,7 @@ class FilterPlayersTable(BasePage):
     expected_main_position_title = "defender"
     searched_club_xpath = "//td[5]/div[2]"
     expected_club_title = "Wild Goats"
-    player_choosing_button_xpath = "//td[1]"
+    player_choosing_button_xpath = "//tr[1]/td[1]/div[2]"
 
     def click_on_the_filter_table_button(self):
         self.click_on_the_element(self.filter_table_button_xpath)
@@ -74,5 +74,5 @@ class FilterPlayersTable(BasePage):
         self.assert_element_text(self.driver, self.searched_main_position_xpath, self.expected_main_position_title)
 
     def click_on_the_player_choosing_button(self):
-        self.wait_for_element_to_be_clickable(self.player_choosing_button)
-        self.click_on_the_element(self.player_choosing_button)
+        self.wait_for_element_to_be_clickable(self.player_choosing_button_xpath)
+        self.click_on_the_element(self.player_choosing_button_xpath)

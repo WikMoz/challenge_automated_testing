@@ -15,7 +15,7 @@ class TestLoginPage(unittest.TestCase):
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
         self.driver = webdriver.Chrome(executable_path=DRIVER_PATH)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
+        self.driver.get('https://scouts.futbolkolektyw.pl/en')
         self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
@@ -25,16 +25,32 @@ class TestLoginPage(unittest.TestCase):
 
     def test_log_in_to_the_system(self):
         user_login = LoginPage(self.driver)
-        user_login.title_of_page()  # check if the title of the opened page is correct (login page)
-        user_login.title_of_box()  # check if the title of the box is correct
+        #user_login.title_of_page()  # check if the title of the opened page is correct (login page)
+        #user_login.title_of_box()  # check if the title of the box is correct
         user_login.type_in_email('user07@getnada.com')  # enter "user07getnada@com" in the email field
         user_login.type_in_password('Test-1234')  # enter "Test-1234" in the password field
         user_login.click_on_the_sign_in_button()  # click on the sign in button
+
 
           # check if the title of the opened page is correct (dashboard)
 
         '''time.sleep (5)'''  # ta linia sprawia, że test zatrzymał się na 5 sekund,
         # a dopiero następnie zaczął wykonywać kolejne linie kodu. Ale tu zastępujemy ją Explicit wait
+        @classmethod
+        def tearDown(self):
+            self.driver.quit()
+    def test_assert_main_page_title(self):
+        user_login = LoginPage(self.driver)
+        user_login.type_in_email('user07@getnada.com')  # enter "user07getnada@com" in the email field
+        user_login.type_in_password('Test-1234')  # enter "Test-1234" in the password field
+        user_login.click_on_the_sign_in_button()  # click on the sign in button
+
+        dashboard_page = Dashboard(self.driver)
+
+        var_shot = pyautogui.screenshot()
+        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/dashboard.png')
+        dashboard_page.title_of_page()
+
 
     @classmethod
     def tearDown(self):
@@ -51,6 +67,9 @@ class TestLoginPage(unittest.TestCase):
         user_login.title_of_sign_in_button_en()
         user_login.click_on_the_language_select_menu_button()
         user_login.click_on_the_polish_language_option()
+        user_login.click_on_the_english_language_option()
+        user_login.title_of_english_language_option()
+        user_login.title_of_box()
 
         var_shot = pyautogui.screenshot()
         var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC01-polish.png')
@@ -68,9 +87,6 @@ class TestLoginPage(unittest.TestCase):
 
         var_shot = pyautogui.screenshot()
         var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC01-english.png')
-
-    def assert_main_page_title
-
 
     def test_log_in_to_the_system_with_invalid_password(self):
         user_login = LoginPage(self.driver)
@@ -90,5 +106,8 @@ class TestLoginPage(unittest.TestCase):
         user_login.select_language("polski")
         time.sleep(5)
 
+    @classmethod
+    def tearDown(self):
+        self.driver.quit()
 
 

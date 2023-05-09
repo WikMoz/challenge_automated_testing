@@ -19,7 +19,7 @@ class TestAddPlayerForm(unittest.TestCase):
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
         self.driver = webdriver.Chrome(executable_path=DRIVER_PATH)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
+        self.driver.get('https://scouts.futbolkolektyw.pl/en')
         self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
@@ -67,7 +67,6 @@ class TestAddPlayerForm(unittest.TestCase):
         var_shot = pyautogui.screenshot()
         var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC03-2.png')
 
-    def test_assert_fields(self):
         add_player_form = AddPlayerForm(self.driver)
         add_player_form.assert_name()
         add_player_form.assert_email()

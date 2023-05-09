@@ -36,8 +36,9 @@ class TestAddingAMatch(unittest.TestCase):
         player_panel.click_on_the_matches_of_a_player_button()
         player_panel.click_on_the_add_match_button()
 
+        var_shot = pyautogui.screenshot()
+        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC05-1.png')
         add_a_match_form = AddAMatchForm(self.driver)
         add_a_match_form.wait_for_element()
 
-        var_shot = pyautogui.screenshot()
-        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC05-1.png')
+

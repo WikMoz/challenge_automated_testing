@@ -14,7 +14,7 @@ class AddAMatchForm(BasePage):
     time_played_input_xpath = "//div[9]/div/div/input"
     number_input_xpath = "//input[contains(@name,'number')]"
     web_match_input_xpath = "//div[11]/div/div/input"
-    add_a_match_form_url = "https://www.scouts-test.futbolkolektyw.pl/en/players/6447e5147ccfb69252f31418/matches/add"
+    add_a_match_form_url = "https://www.scouts.futbolkolektyw.pl/en/players/6447e5147ccfb69252f31418/matches/add"
     expected_title = "Adding match player Player 2 Playerowski"
 
 
