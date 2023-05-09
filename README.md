@@ -6,27 +6,30 @@ Tutaj znajdziesz mój kod :
 - [test cases](https://github.com/WikMoz/challenge_automated_testing/tree/main/test_cases)
 ---
 ## Spis treści
-* [**Zadanie 1 - KONFIGURACJA OPROGRAMOWANIA**](#zadanie-1)
+
+## [Zadanie 1 - KONFIGURACJA OPROGRAMOWANIA](#zadanie-1)
   * [Podzadanie 1](#podzadanie-1)
   * [Podzadanie 4](#podzadanie-4)
 
-* [**Zadanie 2 - SELEKTORY**](#zadanie-2)
+## [Zadanie 2 - SELEKTORY](#zadanie-2)
   * [Podzadanie 2](#podzadanie-2)
   
-* [**Zadanie 3 - PIERWSZY TEST I ASSERT**](#zadanie-3)
+## [Zadanie 3 - PIERWSZY TEST I ASSERT](#zadanie-3)
 
-* [**Zadanie 4 - REFACTOR, DEBUGGER I PRZYPADKI TESTOWE**](#zadanie-4)
+## [Zadanie 4 - REFACTOR, DEBUGGER I PRZYPADKI TESTOWE](#zadanie-4)
   * [Podzadania 1](#podzadanie-1-1)
   * [Podzadanie 2](#podzadanie-2-1)
   * [Podzadanie 3](#podzadanie-3)
   * [Podzadanie 4](#podzadanie-4-1)
   * [Podzadanie 5](#podzadanie-5)
 
-* [**Zadanie 5 - ROBOT FRAMEWORK**](#zadanie-5)
+## [Zadanie 5 - ROBOT FRAMEWORK](#zadanie-5)
   * [Podzadanie 1](#podzadanie-1-2)
-  
-* [**Zadanie 6 - RAPORTOWANIE BŁĘDÓW I RAPORT Z TESTÓW**](#zadanie-6)
+
+## [**Zadanie 6 - RAPORTOWANIE BŁĘDÓW I RAPORT Z TESTÓW**](#zadanie-6)
   * [Podzadanie 2](#podzadanie-2-2)
+  * [Podzadanie 3](#podzadanie-3-1)
+  * [Podzadanie 4](#podzadanie-4-2)
   
 --- 
 
@@ -206,7 +209,8 @@ Cele zadania 5:
 4. [x] wygenerować automatycznie raport
 
 ## Podzadanie 1
-[Robot framework repository ](https://github.com/WikMoz/scoutspanel_robotframework)
+[ROBOT FRAMEWORK](https://github.com/WikMoz/scoutspanel_robotframework)
+
 
 ---
 
@@ -227,3 +231,4 @@ Cele zadania 6:
 
 ## Podzadanie 4
 [Portfolio](https://github.com/WikMoz/Portfolio)
+
