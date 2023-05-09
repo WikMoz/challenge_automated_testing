@@ -133,8 +133,7 @@ class AddPlayerForm(BasePage):
             self.click_on_the_element(self.left_leg_option_xpath)
 
     def assert_name (self):
-
-        self.wait_for_element_to_be_clickable(self.name_field_xpath)
+        self.longer_wait_for_element_to_be_clickable(self.name_field_xpath)
         self.assert_element_text(self.driver, self.name_field_xpath, self.expected_name)
 
     def assert_surname(self):
@@ -146,7 +145,7 @@ class AddPlayerForm(BasePage):
     def assert_phone(self):
         self.assert_element_text(self.driver, self.phone_field_xpath, self.expected_phone_number)
 
-    def assert_weigt(self):
+    def assert_weight(self):
         self.assert_element_text(self.driver, self.weight_field_xpath, self.expected_weight)
 
     def assert_height(self):
@@ -187,3 +186,4 @@ class AddPlayerForm(BasePage):
 
     def assert_facebook(self):
         self.assert_element_text(self.driver, self.facebook_field_xpath, self.expected_facebook_link)
+

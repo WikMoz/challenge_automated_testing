@@ -72,7 +72,7 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form.assert_email()
         add_player_form.assert_surname()
         add_player_form.assert_phone()
-        add_player_form.assert_weigt()
+        add_player_form.assert_weight()
         add_player_form.assert_height()
         add_player_form.assert_date_of_birth()
         add_player_form.assert_leg()
