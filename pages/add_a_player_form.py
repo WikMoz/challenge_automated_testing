@@ -132,9 +132,10 @@ class AddPlayerForm(BasePage):
         else:
             self.click_on_the_element(self.left_leg_option_xpath)
 
-    def assert_name (self):
-        self.longer_wait_for_element_to_be_clickable(self.name_field_xpath)
-        self.assert_element_text(self.driver, self.name_field_xpath, self.expected_name)
+    def assert_name(self):
+        self.longer_wait_for_element_to_be_clickable(self.surname_field_xpath)
+        self.find_element(self.name_field_xpath)
+        assert self.name_field_xpath == self.expected_name
 
     def assert_surname(self):
         self.assert_element_text(self.driver, self.surname_field_xpath, self.expected_surname)

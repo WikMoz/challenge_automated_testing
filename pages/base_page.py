@@ -47,3 +47,5 @@ class BasePage():
         element = wait.until(EC.element_to_be_clickable((locator_type, locator)))
         time.sleep(10)
 
+    def find_element(self, selector, selector_type=By.XPATH):
+        return self.driver.find_element(selector_type, selector)

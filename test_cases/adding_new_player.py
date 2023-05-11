@@ -33,7 +33,7 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form = AddPlayerForm(self.driver)
         add_player_form.title_of_page()
         add_player_form.type_in_email('player2@gmail.com')
-        add_player_form.type_in_name('Player 2')
+        add_player_form.type_in_name('Player 9')
         add_player_form.type_in_surname('Playerowski')
         add_player_form.type_in_phone('999999999')
         add_player_form.type_in_weight('80')
@@ -65,7 +65,7 @@ class TestAddPlayerForm(unittest.TestCase):
 
 
         var_shot = pyautogui.screenshot()
-        var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC03-2.png')
+       # var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC03-2.png')
 
         add_player_form = AddPlayerForm(self.driver)
         add_player_form.assert_name()
