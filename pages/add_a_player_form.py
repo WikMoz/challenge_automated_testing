@@ -23,7 +23,7 @@ class AddPlayerForm(BasePage):
     leg_select_menu_xpath = '//*[@id="mui-component-select-leg"]'
     right_leg_option_xpath = "//*[@id='menu-leg']/div[3]/ul/li[1]"
     left_leg_option_xpath = "//*[@id='menu-leg']/div[3]/ul/li[2]"
-    expected_leg = "Right"
+    expected_leg = "Right leg"
     club_field_xpath = "//div[9]/div/div/input"
     expected_club = "Wild Goats"
     level_field_xpath = "//div[10]/div/div/input"
@@ -42,6 +42,10 @@ class AddPlayerForm(BasePage):
     expected_language = "english"
     second_language_field_xpath = "//div[15]/div[2]/div/div/input"
     expected_second_language = "japanese"
+    laczy_nas_pilka_field_xpath = "//div[16]/div/div/input"
+    expected_laczy_nas_pilka_link = "https://laczynaspilka.com/player"
+    minut_field_xpath = "//div[17]/div/div/input"
+    expected_minut_link = "https://90minut.com/player"
     add_youtube_link_button_xpath = "//div[19]/button/span[1]"
     expected_youtube_link = "https://www.youtube.com/watch?v=gDgFXMKA6QU"
     youtube_field_xpath = "//*[@name='webYT[0]']"
@@ -49,6 +53,8 @@ class AddPlayerForm(BasePage):
     expected_facebook_link = "https://facebook.com"
     submit_button_xpath = "//div[3]/button[1]/span[1]"
     edit_player_title_xpath = "//form/div[1]/div/span"
+    required_field_message_xpath = "//div[11]/div/p"
+    expected_required_field_message = "Required"
 
     def title_of_page(self):
         assert self.get_page_title(self.add_player_form_url) == self.expected_title
@@ -112,6 +118,12 @@ class AddPlayerForm(BasePage):
     def type_in_second_language(self, language):
         self.field_send_keys(self.second_language_field_xpath, language)
 
+    def type_in_laczy_nas_pilka_link(self, link):
+        self.field_send_keys(self.laczy_nas_pilka_field_xpath, link)
+
+    def type_in_minute_link(self, link):
+        self.field_send_keys(self.minut_field_xpath, link)
+
     def click_on_the_add_youtube_link_button(self):
         self.click_on_the_element(self. add_youtube_link_button_xpath)
 
@@ -132,59 +144,65 @@ class AddPlayerForm(BasePage):
         else:
             self.click_on_the_element(self.left_leg_option_xpath)
 
+
     def assert_name(self):
         self.longer_wait_for_element_to_be_clickable(self.surname_field_xpath)
-        self.find_element(self.name_field_xpath)
-        assert self.name_field_xpath == self.expected_name
+        self.assert_input_text(self.driver, self.name_field_xpath, self.expected_name)
 
     def assert_surname(self):
-        self.assert_element_text(self.driver, self.surname_field_xpath, self.expected_surname)
+        self.assert_input_text(self.driver, self.surname_field_xpath, self.expected_surname)
 
     def assert_email(self):
-        self.assert_element_text(self.driver, self.email_field_xpath, self.expected_email)
+        self.assert_input_text(self.driver, self.email_field_xpath, self.expected_email)
 
     def assert_phone(self):
-        self.assert_element_text(self.driver, self.phone_field_xpath, self.expected_phone_number)
+        self.assert_input_text(self.driver, self.phone_field_xpath, self.expected_phone_number)
 
     def assert_weight(self):
-        self.assert_element_text(self.driver, self.weight_field_xpath, self.expected_weight)
+        self.assert_input_text(self.driver, self.weight_field_xpath, self.expected_weight)
 
     def assert_height(self):
-        self.assert_element_text(self.driver, self.height_field_xpath, self.expected_height)
+        self.assert_input_text(self.driver, self.height_field_xpath, self.expected_height)
 
     def assert_date_of_birth(self):
-        self.assert_element_text(self.driver, self.date_of_birth_field_xpath, self.expected_date_of_birth)
+        self.assert_input_text(self.driver, self.date_of_birth_field_xpath, self.expected_date_of_birth)
 
     def assert_leg(self):
         self.assert_element_text(self.driver, self.leg_select_menu_xpath, self.expected_leg)
 
     def assert_club(self):
-        self.assert_element_text(self.driver, self.club_field_xpath, self.expected_club)
+        self.assert_input_text(self.driver, self.club_field_xpath, self.expected_club)
 
     def assert_level(self):
-        self.assert_element_text(self.driver, self.level_field_xpath, self.expected_level)
+        self.assert_input_text(self.driver, self.level_field_xpath, self.expected_level)
 
     def assert_main_position(self):
-        self.assert_element_text(self.driver, self.main_position_field_xpath, self.expected_main_position)
+        self.assert_input_text(self.driver, self.main_position_field_xpath, self.expected_main_position)
 
     def assert_second_position(self):
-        self.assert_element_text(self.driver, self.second_position_field_xpath, self.expected_second_position)
+        self.assert_input_text(self.driver, self.second_position_field_xpath, self.expected_second_position)
 
     def assert_district(self):
-        self.assert_element_text(self.driver, self.lodz_district_option_xpath, self.expected_district)
+        self.assert_element_text(self.driver, self.district_select_menu_field_xpath, self.expected_district)
 
     def assert_achievements(self):
-        self.assert_element_text(self.driver, self.achievements_field_xpath, self.expected_achievements)
+        self.assert_input_text(self.driver, self.achievements_field_xpath, self.expected_achievements)
 
     def assert_language(self):
-        self.assert_element_text(self.driver, self.language_field_xpath, self.expected_language)
+        self.assert_input_text(self.driver, self.language_field_xpath, self.expected_language)
 
     def assert_second_language(self):
-        self.assert_element_text(self.driver, self.second_language_field_xpath, self.expected_second_language)
+        self.assert_input_text(self.driver, self.second_language_field_xpath, self.expected_second_language)
+
+    def assert_laczynaspilka_link(self):
+        self.assert_input_text(self.driver, self.laczy_nas_pilka_field_xpath, self.expected_laczy_nas_pilka_link)
+
+    def assert_minut_link(self):
+        self.assert_input_text(self.driver, self.minut_field_xpath, self.expected_minut_link)
 
     def assert_youtube(self):
-        self.assert_element_text(self.driver, self.youtube_field_xpath, self.expected_youtube_link)
+        self.assert_input_text(self.driver, self.youtube_field_xpath, self.expected_youtube_link)
 
     def assert_facebook(self):
-        self.assert_element_text(self.driver, self.facebook_field_xpath, self.expected_facebook_link)
+        self.assert_input_text(self.driver, self.facebook_field_xpath, self.expected_facebook_link)
 
