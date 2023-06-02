@@ -55,5 +55,6 @@ class TestPlayersTable(unittest.TestCase):
         var_shot = pyautogui.screenshot()
         var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/TC04-2.png')
 
-
-
+    @classmethod
+    def tearDown(self):
+        self.driver.quit()

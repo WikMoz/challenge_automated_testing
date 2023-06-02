@@ -97,4 +97,6 @@ class TestAddPlayerForm(unittest.TestCase):
         add_player_form.select_leg("right")
         add_player_form.select_leg("left")
 
-
+    @classmethod
+    def tearDown(self):
+        self.driver.quit()

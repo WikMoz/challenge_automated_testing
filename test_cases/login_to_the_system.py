@@ -36,9 +36,7 @@ class TestLoginPage(unittest.TestCase):
 
         '''time.sleep (5)'''  # ta linia sprawia, że test zatrzymał się na 5 sekund,
         # a dopiero następnie zaczął wykonywać kolejne linie kodu. Ale tu zastępujemy ją Explicit wait
-        @classmethod
-        def tearDown(self):
-            self.driver.quit()
+
     def test_assert_main_page_title(self):
         user_login = LoginPage(self.driver)
         user_login.type_in_email('user07@getnada.com')  # enter "user07getnada@com" in the email field
@@ -50,12 +48,6 @@ class TestLoginPage(unittest.TestCase):
         var_shot = pyautogui.screenshot()
         var_shot.save('C:/Users/mofyp/GitHub/challenge_automated_testing/dashboard.png')
         dashboard_page.title_of_page()
-
-
-    @classmethod
-    def tearDown(self):
-        self.driver.quit()
-
 
     def test_changing_language_at_login_page(self):
         user_login = LoginPage(self.driver)

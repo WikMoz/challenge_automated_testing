@@ -41,4 +41,6 @@ class TestAddingAMatch(unittest.TestCase):
         add_a_match_form = AddAMatchForm(self.driver)
         add_a_match_form.wait_for_element()
 
-
+    @classmethod
+    def tearDown(self):
+        self.driver.quit()
